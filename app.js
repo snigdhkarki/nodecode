@@ -11,10 +11,10 @@ var Item = mongoose.model('Item', itemSchema);
 
 
 
-
+const port = process.env.PORT || 3000;
 var urlencoderParser = bodyParser.urlencoded({extended: false});
 var app = express();
-app.listen(3000);
+app.listen(port);
 
 app.set('view engine', 'ejs');
 
